@@ -1,0 +1,54 @@
+<%
+let teamItems = [
+
+    {
+        title: 'Lorem Ipsum is simply dummy text of the printing',
+        text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard',
+        thumb: 'img/content/team7.png',
+        full: 'img/content/team7.png',
+    },
+    {
+        title: 'Lorem Ipsum is simply dummy text of the printing',
+        text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard',
+        thumb: 'img/content/team8.png',
+        full: 'img/content/team8.png'
+    },
+];
+%>
+
+<section class="personal">
+    <div class="container">
+        <div class="dragee dragee__tab-1"></div>
+        <div class="dragee dragee__tab-2"></div>
+        <div class="dragee dragee__tab-3"></div>
+        <div class="dragee dragee__tab-4"></div>
+        <div class="dragee dragee__tab-5"></div>
+        <h2 class="wow fadeInRight">Title</h2>
+        <div class="personal__inner">
+            <div class="row">
+                <% teamItems.forEach(item => { %>
+                    <div class="col-half">
+                        <div class="personal-item wow fadeInUp">
+                            <div class="personal-item__img">
+                                <a class="und-none" href="<%-item.thumb%>" data-fancybox>
+                                    <div class="pup-item__img-wr">
+                                        <img src="<%-item.thumb%>" alt="">
+                                        <div class="pup-item__show-a">
+                                            <div class="pup-item__show-b">
+                                                <i class="icon-search"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="personal-item__cont pup-item__text-cont">
+                                <h3 class="pup-item__title"><%-item.title%></h3>
+                                <div class="pup-item__text"><%-item.text%></div>
+                            </div>
+                        </div>
+                    </div>
+                <%})%>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,57 @@
+@font-face {
+ font-family: 'icomoon';
+ src: url('../fonts/icomoon/icomoon.eot?7m6pg2');
+ src: url('../fonts/icomoon/fonts/icomoon.eot?7m6pg2#iefix')
+   format('embedded-opentype'),
+  url('../fonts/icomoon/icomoon.ttf?7m6pg2') format('truetype'),
+  url('../fonts/icomoon/icomoon.woff?7m6pg2') format('woff'),
+  url('../fonts/icomoon/icomoon.svg?7m6pg2#icomoon') format('svg');
+ font-weight: normal;
+ font-style: normal;
+ font-display: block;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+ @include icomoon();
+}
+
+.icon-search:before {
+ content: '\e90c';
+}
+.icon-arr:before {
+ content: '\e900';
+}
+.icon-boxes:before {
+ content: '\e901';
+}
+.icon-chat:before {
+ content: '\e902';
+}
+.icon-check:before {
+ content: '\e903';
+}
+.icon-close:before {
+ content: '\e904';
+}
+.icon-cloud:before {
+ content: '\e905';
+}
+.icon-commode:before {
+ content: '\e906';
+}
+.icon-link:before {
+ content: '\e907';
+}
+.icon-logo:before {
+ content: '\e908';
+}
+.icon-paper:before {
+ content: '\e909';
+}
+.icon-play:before {
+ content: '\e90a';
+}
+.icon-world:before {
+ content: '\e90b';
+}

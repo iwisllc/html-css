@@ -1,0 +1,49 @@
+<%
+let menu = [
+    {title: 'Link 1',href: '#vantage'},
+    {title: 'Link 2',href: '#anti'},
+    {title: 'Link 3',href: '#packages'},
+    {title: 'Link 4',href: '#review'},
+    {title: 'Link 5',href: '#products'}
+]
+%>
+<footer class="footer">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="footer__bar">
+                    <div class="footer__logo">
+                        <a class="icon-logo" href="/"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-13">
+                <div class="footer__nav">
+                    <div class="bottom-menu">
+                        <ul>
+                            <% menu.forEach(item => { %>
+                            <li>
+                                <a class="toanchor" href="<%=item.href%>"><%=item.title%></a>
+                            </li>
+                            <%})%>
+                        </ul>
+                    </div>
+                    <div class="footer__btns">
+                        <a class="btn-nav btn-nav_foot toanchor" href="#form-section-2">Замовити дзвінок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__text">
+                <div class="footer__text-first">
+                    <span>© Example, 1991-2023</span>
+                </div>
+                <div><span>© Example "Name", 2010-2023.</span></div>
+            </div>
+            <div class="footer__phone">
+                <a href="tel:+0000000000">0-000-000-000</a>
+            </div>
+        </div>
+    </div>
+</footer>

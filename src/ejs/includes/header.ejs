@@ -1,0 +1,43 @@
+<%
+let menu = [
+    {title: 'Link 1',href: '#vantage'},
+    {title: 'Link 2',href: '#anti'},
+    {title: 'Link 3',href: '#packages'},
+    {title: 'Link 4',href: '#review'},
+    {title: 'Link 5',href: '#products'}
+]
+%>
+
+<header class="header wow fadeInDown" data-wow-delay="5.3s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="header__bar">
+                    <div class="header__logo">
+                        <a class="icon-logo" href="/"></a>
+                    </div>
+                    <div class="open-close">
+                        <div class="open-close__open"></div>
+                        <div class="open-close__close"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-13 mobile-menu">
+                <div class="header__nav">
+                    <div class="top-menu">
+                        <ul>
+                            <% menu.forEach(item => { %>
+                            <li>
+                                <a class="toanchor" href="<%=item.href%>"><%=item.title%></a>
+                            </li>
+                            <%})%>
+                        </ul>
+                    </div>
+                    <div class="header__btns">
+                        <a class="btn-nav btn-nav_blue toanchor" href="#form-section-1">Замовити дзвінок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,76 @@
+<%
+let gives = [
+{
+title: 'Lorem Ipsum',
+text: 'Lorem Ipsum is <br>simply dummy text',
+icon: 'cloud'
+},
+{
+title: 'Lorem Ipsum',
+text: 'Lorem Ipsum is <br>simply dummy text',
+icon: 'chat'
+},
+{
+title: 'Lorem Ipsum <br>is simply',
+text: 'Lorem Ipsum is <br>simply dummy text',
+icon: 'boxes'
+},
+{
+title: 'Lorem Ipsum <br>is simply',
+text: 'Lorem Ipsum is <br>simply dummy text',
+icon: 'commode'
+},
+{
+title: 'Lorem Ipsum',
+text: 'Lorem Ipsum is <br>simply dummy text',
+icon: 'paper'
+},
+{
+title: 'Lorem Ipsum',
+text: 'Lorem Ipsum is <br>simply dummy text',
+icon: 'world'
+},
+];
+%>
+
+<section class="gives">
+    <div class="container">
+        <div class="dragee dragee__tab-1"></div>
+        <div class="dragee dragee__tab-2"></div>
+        <div class="dragee dragee__tab-3"></div>
+        <div class="dragee dragee__tab-4"></div>
+        <div class="dragee dragee__tab-5"></div>
+        <h2 class="wow fadeInRight">Що дає<br>Name</h2>
+        <div class="gives-wr wow fadeInUp">
+            <div class="gives-list">
+                <% gives.forEach(item => {%>
+                    <div class="gives-el <%=item.icon%>">
+                        <div class="gives-icon"><i class="icon-<%=item.icon%>"></i></div>
+                        <div class="gives-el__cont">
+                            <div class="gives-el__title"><%-item.title%></div>
+                            <div class="gives-el__text"><%-item.text%></div>
+                        </div>
+                    </div>
+                <%})%>
+            </div>
+            <div class="row row-with-circle">
+                <div class="col-md-offset-5 col-md-10">
+                    <div class="circle-gives-wr">
+                        <div class="circle-gives">
+                            <div class="circle-gives__a">
+                                <% gives.forEach(item => {%>
+                                    <div class="gives-icon <%=item.icon%>"><i class="icon-<%=item.icon%>"></i></div>
+                                <%})%>
+                                <div class="circle-gives__b">
+                                    <div class="circle-gives__c">
+                                        <i class="icon-logo"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
